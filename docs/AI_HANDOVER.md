@@ -52,9 +52,10 @@ Default branch:
 
 - Git repository initialized, `origin` remote configured, GitHub repository exists.
 - Vite + React + TypeScript scaffold generated and committed (`initiatl code`).
-- Core TaskNest feature set implemented locally (see below) but **not yet committed** — check `git status` before assuming this is landed.
-- Not yet pushed to GitHub beyond the initial scaffold commit.
-- Vercel project not yet connected.
+- Core TaskNest feature set implemented and pushed to GitHub (`main`).
+- Vercel project `tasknest` created and connected to `ArantaUsha/tasknest` — pushes to `main` auto-deploy to production.
+- Live production URL: https://tasknest-kappa-nine.vercel.app
+- A `VERCEL_TOKEN` is kept in a local `.env` file (git-ignored) for CLI use; `.vercel/` (git-ignored) holds the local project link.
 
 Always run `git status` and `git log --oneline -5` at the start of a session to confirm the real state — do not trust this document's snapshot blindly.
 
@@ -136,12 +137,13 @@ Task IDs are generated with `crypto.randomUUID()`.
 
 ## Current Next Task
 
-The feature implementation is done locally. The next steps are:
+Stages 1-10 of [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) are done: implementation, commit, push, and Vercel connection with a verified production deployment.
 
-1. Commit the implementation (Stage 8 of [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md)).
-2. Push to GitHub (Stage 9).
-3. Connect the repository to Vercel and verify a production deployment (Stage 10).
-4. Make a trivial change, push, and confirm automatic redeployment (Stage 11).
+Remaining:
+
+1. Stage 11 — confirm a routine push produces an automatic redeploy (expected to already work now that GitHub is connected; verify next time a change is pushed).
+2. Stage 12 — troubleshooting exercise (optional/learning).
+3. Stage 13 — keep this document and `SESSION_HANDOVER.md` updated as work continues.
 
 Check [SESSION_HANDOVER.md](SESSION_HANDOVER.md) for the latest session-by-session status before starting.
 

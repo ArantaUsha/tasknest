@@ -127,7 +127,7 @@ Verify:
 
 ## 10. Stage 8 — First Git Commit
 
-Status: **Not started** (scaffold is committed; the feature implementation from Stages 3-7 above is not yet committed)
+Status: **Done**
 
 Learn and execute:
 
@@ -143,6 +143,8 @@ The first commit should represent a meaningful working baseline.
 
 ## 11. Stage 9 — Push to GitHub
 
+Status: **Done**
+
 Verify:
 
 - remote
@@ -156,6 +158,8 @@ Expected result:
 The GitHub repository contains the TaskNest source code.
 
 ## 12. Stage 10 — Vercel Setup
+
+Status: **Done** — live at https://tasknest-kappa-nine.vercel.app
 
 Connect the GitHub repository to Vercel.
 

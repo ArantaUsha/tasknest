@@ -27,7 +27,15 @@ Newest session first.
 - Not pushed to GitHub beyond the original scaffold commit.
 - Vercel project not yet connected.
 
-**Next session goal:** Review the diff with the user, commit (Stage 8), push (Stage 9), then connect Vercel and verify a production deployment (Stage 10), following [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md).
+**Update (same session, continued):**
+
+- Committed and pushed the implementation to `origin/main`.
+- Created Vercel project `tasknest` (account `usha1695-2868s-projects`) via CLI using a `VERCEL_TOKEN` stored in a local, git-ignored `.env`.
+- Connected the GitHub repo to Vercel for auto-deploy (user linked GitHub as a Vercel login method first, then `vercel git connect` confirmed the repo connection).
+- Ran a manual `vercel deploy --prod` to get the first production deployment live: https://tasknest-kappa-nine.vercel.app
+- Stages 8, 9, and 10 of [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md) are now done.
+
+**Next session goal:** Confirm Stage 11 (a routine `git push` alone triggers an automatic Vercel redeploy, no manual `vercel deploy` needed) — this doc update + push is the test. After that, Stage 12 (troubleshooting exercise) is optional/learning-only.
 
 ### Session 1 — Project Setup
 
