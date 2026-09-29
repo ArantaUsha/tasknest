@@ -174,6 +174,8 @@ Understand:
 
 ## 13. Stage 11 — Automatic Deployment
 
+Status: **Done** — verified 2026-09-30: a `git push` to `main` alone triggered a new Vercel production build and deployment with no manual `vercel deploy` call.
+
 Make a small code change.
 
 Then:
@@ -216,14 +218,16 @@ Update `AI_HANDOVER.md` so another coding session can continue without reconstru
 
 ## 16. Completion Criteria
 
+Status: **Met** (2026-09-30)
+
 Initial milestone is complete when:
 
-- Local application works.
-- Git repository contains the application.
-- GitHub contains the repository history.
-- Vercel is connected.
-- Production deployment succeeds.
-- A subsequent GitHub push automatically deploys a change.
+- [x] Local application works.
+- [x] Git repository contains the application.
+- [x] GitHub contains the repository history.
+- [x] Vercel is connected.
+- [x] Production deployment succeeds — https://tasknest-kappa-nine.vercel.app
+- [x] A subsequent GitHub push automatically deploys a change.
 
 ## 17. Rule for Future Changes
 
