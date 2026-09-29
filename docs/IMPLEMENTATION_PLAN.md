@@ -8,17 +8,19 @@ Each stage should be completed and verified before moving to the next stage.
 
 ## 2. Stage 0 — Project Documentation
 
-Status: **Current**
+Status: **Ongoing** (living documents, updated alongside implementation)
 
 Create and maintain:
 
 - `PROJECT_START.md`
 - `PROJECT_DISCOVERY.md`
 - `IMPLEMENTATION_PLAN.md`
-- `CODEX_HANDOVER.md`
+- `AI_HANDOVER.md`
 - `SESSION_HANDOVER.md`
 
 ## 3. Stage 1 — Initialize Frontend
+
+Status: **Done**
 
 Technology:
 
@@ -56,6 +58,8 @@ Document important observations.
 
 ## 5. Stage 3 — Build Initial UI
 
+Status: **Done**
+
 Create:
 
 - Application shell
@@ -71,6 +75,8 @@ Do not introduce unnecessary libraries.
 
 ## 6. Stage 4 — Add React Behaviour
 
+Status: **Done**
+
 Implement:
 
 - Task state
@@ -84,11 +90,15 @@ Use React state and event handling.
 
 ## 7. Stage 5 — TypeScript
 
+Status: **Done**
+
 Define appropriate types/interfaces.
 
 Verify that the implementation builds without TypeScript errors.
 
 ## 8. Stage 6 — Styling
+
+Status: **Done**
 
 Create a clean responsive interface using normal CSS.
 
@@ -104,6 +114,8 @@ Focus on:
 
 ## 9. Stage 7 — Local Verification
 
+Status: **Done**
+
 Run the appropriate development and production commands.
 
 Verify:
@@ -114,6 +126,8 @@ Verify:
 - No obvious console errors
 
 ## 10. Stage 8 — First Git Commit
+
+Status: **Not started** (scaffold is committed; the feature implementation from Stages 3-7 above is not yet committed)
 
 Learn and execute:
 
@@ -194,7 +208,7 @@ Update:
 - known issues
 - next recommended task
 
-Update `CODEX_HANDOVER.md` so another coding session can continue without reconstructing context.
+Update `AI_HANDOVER.md` so another coding session can continue without reconstructing context.
 
 ## 16. Completion Criteria
 

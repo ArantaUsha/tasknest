@@ -36,7 +36,7 @@ This project will be used to learn:
 - Vercel deployment
 - Automatic deployment from GitHub
 - Basic troubleshooting of frontend builds and deployments
-- Working with a VS Code coding agent (Codex) using project documentation
+- Working with an AI coding agent using project documentation
 
 ## 3. Initial Product Scope
 
@@ -113,7 +113,7 @@ Local project:
 5. Keep documentation synchronized with implementation.
 6. Do not remove existing work unless there is a clear reason.
 7. Record important decisions and changes.
-8. Keep Codex instructions explicit and traceable.
+8. Keep AI agent instructions explicit and traceable.
 9. Verify the local result before moving to GitHub or deployment.
 10. Keep the application simple enough that the learning objective remains clear.
 
@@ -148,9 +148,9 @@ The initial project is successful when:
 
 ## 11. Current Status
 
-**Phase:** Environment and repository setup  
-**Application code:** Not started  
-**Git commits:** None  
-**GitHub push:** Not performed  
+**Phase:** Core application implemented, pending commit/push/deploy  
+**Application code:** Initial feature set implemented (add/complete/delete/filter/counts) — see [AI_HANDOVER.md](AI_HANDOVER.md)  
+**Git commits:** Scaffold committed; feature implementation pending commit  
+**GitHub push:** Scaffold pushed; feature implementation pending push  
 **Vercel connection:** Not configured  
-**Next step:** Initialize the React + Vite + TypeScript application.
+**Next step:** Commit and push the implementation, then connect Vercel. See [AI_HANDOVER.md](AI_HANDOVER.md) and [SESSION_HANDOVER.md](SESSION_HANDOVER.md) for details.

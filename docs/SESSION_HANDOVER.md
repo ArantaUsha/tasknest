@@ -4,9 +4,34 @@
 
 This document records the current project state at the end of a working session so the next session can continue without guessing.
 
-## Current Session
+## Session Log
 
-### Completed
+Newest session first.
+
+### Session 2 — 2026-09-29 (Claude Code)
+
+**Completed:**
+
+- Implemented the full initial TaskNest feature set (FR-001–FR-006): display, add, complete/incomplete, delete, filter (All/Active/Completed), and counts.
+- Structure: `src/types.ts` (`Task`, `TaskFilter`) plus `src/components/{TaskForm,TaskSummary,TaskFilters,TaskList,TaskItem}.tsx`, wired together from `src/App.tsx` which owns all state.
+- No persistence added — tasks are in-memory only, per [PROJECT_DISCOVERY.md](PROJECT_DISCOVERY.md) section 9.
+- Rewrote `src/App.css` and simplified `src/index.css` for a clean, responsive layout; removed the unused Vite/React template assets (`hero.png`, `react.svg`, `vite.svg`, `public/icons.svg`) and their markup.
+- Verified `npm run lint` and `npm run build` both pass; smoke-tested `npm run dev`.
+- Renamed `docs/CODEX_HANDOVER.md` → `docs/AI_HANDOVER.md` and rewrote it to be AI-tool-neutral (not specific to Codex) and reflect current implementation status. Updated remaining "Codex" references in `PROJECT_START.md` to generic "AI coding agent" language.
+- Updated `README.md` to describe the actual app instead of leftover Vite scaffold text.
+- Updated stage statuses in `IMPLEMENTATION_PLAN.md` (Stages 1–7 done, Stage 8 not started).
+
+**Not done / left for next session:**
+
+- Implementation is **not yet committed to Git**. Run `git status` to confirm before assuming otherwise.
+- Not pushed to GitHub beyond the original scaffold commit.
+- Vercel project not yet connected.
+
+**Next session goal:** Review the diff with the user, commit (Stage 8), push (Stage 9), then connect Vercel and verify a production deployment (Stage 10), following [IMPLEMENTATION_PLAN.md](IMPLEMENTATION_PLAN.md).
+
+### Session 1 — Project Setup
+
+**Completed:**
 
 - Established TaskNest as the project name.
 - GitHub repository created: `ArantaUsha/tasknest`.
@@ -44,36 +69,17 @@ React + TypeScript + Vite
 
 No backend or database is planned for the initial version.
 
-## Documentation Created
+## Documentation
 
 - `PROJECT_START.md`
 - `PROJECT_DISCOVERY.md`
 - `IMPLEMENTATION_PLAN.md`
-- `CODEX_HANDOVER.md`
-- `SESSION_HANDOVER.md`
+- `AI_HANDOVER.md`
+- `SESSION_HANDOVER.md` (this file)
 
 ## Current Implementation Status
 
-Application code: **Not started**
-
-Git commit: **Not created**
-
-GitHub push: **Not performed**
-
-Vercel setup: **Not started**
-
-## Next Session Goal
-
-Initialize the React + Vite + TypeScript application in the existing repository.
-
-Before running the initialization command, explain:
-
-- what Vite is
-- what the command does
-- why the project is being initialized in the existing directory
-- what files are expected to appear
-
-Then verify the generated project locally.
+See the top of [Session Log](#session-log) for the latest status — do not rely on this section's history; check `git status` for ground truth.
 
 ## Working Rule
 

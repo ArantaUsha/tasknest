@@ -1,75 +1,41 @@
-# React + TypeScript + Vite
+# TaskNest
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A small task-management web app built as a learning project for the frontend development lifecycle: React + TypeScript + Vite, Git/GitHub, and Vercel deployment.
 
-Currently, two official plugins are available:
+See [docs/](docs/) for the full project history, decisions, and handover notes — start with [docs/AI_HANDOVER.md](docs/AI_HANDOVER.md) if you're an AI coding agent picking this up.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Features
 
-## React Compiler
+- View tasks
+- Add a task
+- Mark a task complete/incomplete
+- Delete a task
+- Filter by All / Active / Completed
+- Task counts (total, active, completed)
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Tasks live in memory only — there is no backend, database, or persistence yet (by design; see [docs/PROJECT_DISCOVERY.md](docs/PROJECT_DISCOVERY.md)).
 
-## Expanding the ESLint configuration
+## Getting Started
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm install
+npm run dev
 ```
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+Other scripts:
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-
+```bash
+npm run build    # type-check and produce a production build in dist/
+npm run lint     # run ESLint
+npm run preview  # preview the production build locally
 ```
+
+## Project Documentation
+
+| File | Purpose |
+|---|---|
+| [docs/PROJECT_START.md](docs/PROJECT_START.md) | Project overview, scope, and status |
+| [docs/PROJECT_DISCOVERY.md](docs/PROJECT_DISCOVERY.md) | Product requirements and user flows |
+| [docs/IMPLEMENTATION_PLAN.md](docs/IMPLEMENTATION_PLAN.md) | Staged implementation plan and progress |
+| [docs/AI_HANDOVER.md](docs/AI_HANDOVER.md) | Handover notes for any AI coding agent continuing this project |
+| [docs/SESSION_HANDOVER.md](docs/SESSION_HANDOVER.md) | Latest session-by-session status log |
